@@ -27,6 +27,7 @@ router.delete('/account/delete', passport.authenticate('jwt', {session: false}),
 // Admin Controller
 router.get('/admin', passport.authenticate('jwt', {session: false}), adminController.adminManage)
 router.put('/admin/ban', passport.authenticate('jwt', {session: false}), adminController.adminUserStatus)
+router.delete('/admin/delete/song', passport.authenticate('jwt', {session: false}), adminController.adminDeleteSong)
 
 // Song Routes
 router.use("/song", songRoutes)
