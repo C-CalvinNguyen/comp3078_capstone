@@ -28,7 +28,7 @@ const routes = require('./routes/routes.js')
 const mongoose = require('mongoose')
 const config = require('./config/config.js')
 const strategyJwt = require('./middleware/jwt-strategy.js')
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8090
 
 // Create app using express
 const app = express()

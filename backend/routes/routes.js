@@ -7,6 +7,7 @@ const userRoutes = require('./userRoutes.js')
 const playlistRoutes = require('./playlistRoutes.js')
 const ratingRoutes = require('./ratingRoutes.js')
 const claimRoutes = require('./claimRoutes.js')
+const authRoutes = require('./authRoutes.js')
 
 const authController = require('../controllers/auth-controller.js')
 const adminController = require('../controllers/admin-controller.js')
@@ -49,5 +50,8 @@ router.use('/rating', ratingRoutes)
 
 // Claim Controller
 router.use('/claim', claimRoutes)
+
+// Auth Controller
+router.use('/auth', authRoutes)
 
 module.exports = router
